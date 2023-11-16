@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- Define a style to format labels -->
+    <style>
+        label{
+            display: inline-block;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page title -->
+    <h1>HTML Form Validation</h1>
+
+    <!-- Form for user input -->
+    <form method="post">
+        <!-- Input field for the first name with a label -->
+        <label for="prenom">Enter your first name, please:</label>
+        <input type="text" name="prenom" id="prenom" maxlength="20" required><br>
+
+        <!-- Input field for the email with a label -->
+        <label for="mail">Enter your email:</label>
+        <input type="email" name="mail" id="mail" required><br>
+
+        <!-- Input field for the phone number with a label -->
+        <label for="tel">Enter your phone number:</label>
+        <input type="tel" name="tel" id="tel" required><br><br>
+
+        <!-- Submit button to validate the form -->
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>
